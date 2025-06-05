@@ -16,7 +16,7 @@ function animals(animal) {
         return true; // Example of returning a boolean
     }
 }
-function main() {
+function mainFunction() {
     const fruitMessage = frutes("apple");
     const vegetableMessage = vegetables("carrot");
     const animalMessage = animals("dog");
