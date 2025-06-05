@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TypeScript Explanatiton vs JavaScript</h1>
+    <p>TypeScript is a superset of JavaScript that adds static typing and other features to the language. It allows developers to catch errors at compile time rather than runtime, making code more robust and maintainable.</p>
+    <p>JavaScript is a dynamic, interpreted language that is widely used for web development. It allows for flexible coding but can lead to runtime errors if types are not managed properly.</p>
+    <h2>Example of TypeScript</h2>
+    <pre><code class="typescript">
+function greet(name: string): string {
+    return `Hello, ${name}!`;
+}
+console.log(greet("TypeScript"));
+</code></pre>
+    <h2>Example of JavaScript</h2>
+    <pre><code class="javascript">
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("JavaScript"));
+</code></pre>
+    <h2>Example of TypeScript with Number</h2>
+
+    <pre><code class="typescript">
+function addNumbers(a: number, b: number): number {
+    return a + b;
+}
+console.log(addNumbers(5, 10));
+</code></pre>
+    <h2>Example of JavaScript with Number</h2>
+    <pre><code class="javascript">
+function addNumbers(a, b) {
+    return a + b;
+}
+console.log(addNumbers(5, 10));
+</code></pre>
+    <h2>TypeScript with Number Example</h2>
+    <pre><code class="typescript">
+let num: number = 42;
+console.log(`The number is: ${num}`);
+</code></pre>
+    <h2>JavaScript with Number Example</h2>
+    <pre><code class="javascript">
+let num = 42;
+console.log(`The number is: ${num}`);
+</code></pre>
+    <h2>TypeScript with Number Example in External File</h2>
+    <pre><code class="typescript">
+let num: number = 100;
+console.log(`The number from external file is: ${num}`);
+</code></pre>
+    <h2>JavaScript with Number Example in External File</h2>
+    <pre><code class="javascript">
+let num = 100;
+
+console.log(`The number from external file is: ${num}`);
+</code></pre>
+    <h2>TypeScript with Number Example in External File</h2>
+    <pre><code class="typescript">
+let num: number = 200;  
+console.log(`The number from external file is: ${num}`);
+</code></pre>
+    <h2>JavaScript with Number Example in External File</h2>
+    <pre><code class="javascript">
+let num = 200;
+console.log(`The number from external file is: ${num}`);
+</code></pre>
+    <!-- <script src="number.js"></script> -->
+    <script src="string.js"></script>
+</body>
+</html>
