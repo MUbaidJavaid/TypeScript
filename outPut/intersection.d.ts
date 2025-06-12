@@ -23,3 +23,29 @@ type OrderIntersection = Intersection<UserIntersection, ProductIntersection> & {
 declare const infoUser: InfoUserIntersection;
 declare const productOrder: ProductOrderIntersection;
 declare const order_one: OrderIntersection;
+interface Info {
+    name: string;
+    version: string;
+    description: string;
+}
+interface User {
+    id: number;
+    username: string;
+    email: string;
+}
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+}
+declare const info: Info;
+declare const userInfo: User;
+declare const productInfo: Product;
+type InfoUser = Info & User;
+type ProductOrder = Product & User;
+type Ordertype = User & Product & {
+    orderId: number;
+    productIds: number[];
+};
+declare const infoUsertype: InfoUser;
+declare const productOrdertype: ProductOrder;
