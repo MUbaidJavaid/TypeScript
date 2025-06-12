@@ -1,3 +1,10 @@
+console.log("Class Example");
+// This code demonstrates a simple class structure in TypeScript with a base class and a derived class.
+// It includes properties, methods, and inheritance to manage products and orders.
+// This code demonstrates a simple class structure in TypeScript with a base class and a derived class.
+// It includes properties, methods, and inheritance to manage products and orders.
+
+
 class Product {
    private proId: number;
    public productName: string;
