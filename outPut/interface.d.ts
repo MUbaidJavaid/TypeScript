@@ -8,7 +8,7 @@ interface User {
     username: string;
     email: string;
 }
-interface Product {
+interface ProductData {
     id: number;
     name: string;
     price: number;
@@ -30,10 +30,10 @@ interface ApiResponse<T> {
 }
 declare var apiInfo: Info;
 declare var user: User;
-declare var product: Product;
-declare var order: Order;
+declare var user: User;
+declare var producData: ProductData;
 declare var response: Responseof<User>;
-declare var apiResponse: ApiResponse<Product>;
+declare var apiResponse: ApiResponse<ProductData>;
 declare function displayInfo(info: Info): void;
 declare function displayUser(user: User): void;
 declare function displayProduct(product: Product): void;

@@ -10,7 +10,7 @@ interface User {
   email: string;
 }
 
-interface Product {
+interface ProductData {
   id: number;
   name: string;
   price: number;
@@ -47,21 +47,22 @@ var user: User = {
   username: "john_doe",
   email: "example@gmail.com"
 };
+var user: User = {
+  id: 1,
+  username: "john_doe",
+  email: "exmale@gmail.com"
+};
 
-var product: Product = {
+var producData: ProductData = {
   id: 101,
   name: "Sample Product",
-  price: 29.99
+  price: 29.99,
+  // pId: 101,
+  // productName: "Sample Product",
+  // proId: 101,
+  // addToCart: () => { console.log("Added to cart"); }
 };
 
-var order: Order = {
-  id: user.id, // Reusing User ID
-  username: user.username, // Reusing User Username
-  email: user.email, // Reusing User Email
-  orderId: 1001,
-  userId: user.id,
-  productIds: [product.id]
-};
 
 var response: Responseof<User> = {
   statusinfo: "success",
@@ -69,10 +70,10 @@ var response: Responseof<User> = {
   error: undefined
 };
 
-var apiResponse: ApiResponse<Product> = {
+var apiResponse: ApiResponse<ProductData> = {
   success: true,
   message: "Product retrieved successfully",
-  payload: product
+  payload: producData
 };
 
 function displayInfo(info: Info): void {
@@ -113,8 +114,8 @@ function displayApiResponse<T>(apiResponse: ApiResponse<T>): void {
 function mainInterface(): void {
   displayInfo(apiInfo);
   displayUser(user);
-  displayProduct(product);
-  displayOrder(order);
+  // displayProduct(producData);
+  // displayOrder(order);
   displayResponse(response);
   displayApiResponse(apiResponse);
 }

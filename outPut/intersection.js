@@ -33,16 +33,6 @@ const info = {
     version: "1.0.0",
     description: "This is a sample API for demonstration purposes."
 };
-const userInfo = {
-    id: 1,
-    username: "john_doe",
-    email: "example@gmail.com"
-};
-const productInfo = {
-    id: 101,
-    name: "Sample Product",
-    price: 29.99
-};
 // This type combines properties from User and Product interfaces, along with additional properties orderId and productIds.
 // It will have properties: id, username, email, orderId, userId, and productIds.
 // Example usage
@@ -54,10 +44,10 @@ const infoUsertype = {
     username: "john_doe",
     email: "example@gmail.com"
 };
-const productOrdertype = {
-    id: 101,
-    name: "Sample Product",
-    price: 29.99,
-    username: "sample_user",
-    email: "sample@example.com"
-};
+// const productOrdertype: ProductOrder = {
+//   id: 101,
+//   name: "Sample Product",
+//   price: 29.99,
+//   username: "sample_user",
+//   email: "sample@example.com"
+// };

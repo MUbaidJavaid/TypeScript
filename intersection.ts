@@ -82,6 +82,11 @@ interface Product {
   id: number;
   name: string;
   price: number;
+  pId: string;
+  productName: string;
+  // addToCart: () => void;
+  // addCart: boolean;
+  // inOrder: boolean;
 }
 
 // Example usage of the intersection types
@@ -90,16 +95,12 @@ const info: Info = {
   version: "1.0.0",
   description: "This is a sample API for demonstration purposes."
 };
-const userInfo: User = {
-  id: 1,
-  username: "john_doe",
-  email: "example@gmail.com"
-};
-const productInfo: Product = {
-  id: 101,
-  name: "Sample Product",
-  price: 29.99
-};
+
+// const productInfo_one: Product = {
+//   id: 101,
+//   name: "Sample Product",
+//   price: 29.99
+// };
 
 type InfoUser = Info & User;
 // This type combines properties from both Info and User interfaces.
@@ -122,10 +123,10 @@ const infoUsertype: InfoUser = {
   username: "john_doe",
   email: "example@gmail.com"
 };
-const productOrdertype: ProductOrder = {
-  id: 101,
-  name: "Sample Product",
-  price: 29.99,
-  username: "sample_user",
-  email: "sample@example.com"
-};
+// const productOrdertype: ProductOrder = {
+//   id: 101,
+//   name: "Sample Product",
+//   price: 29.99,
+//   username: "sample_user",
+//   email: "sample@example.com"
+// };

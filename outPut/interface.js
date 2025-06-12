@@ -9,18 +9,19 @@ var user = {
     username: "john_doe",
     email: "example@gmail.com"
 };
-var product = {
+var user = {
+    id: 1,
+    username: "john_doe",
+    email: "exmale@gmail.com"
+};
+var producData = {
     id: 101,
     name: "Sample Product",
-    price: 29.99
-};
-var order = {
-    id: user.id, // Reusing User ID
-    username: user.username, // Reusing User Username
-    email: user.email, // Reusing User Email
-    orderId: 1001,
-    userId: user.id,
-    productIds: [product.id]
+    price: 29.99,
+    // pId: 101,
+    // productName: "Sample Product",
+    // proId: 101,
+    // addToCart: () => { console.log("Added to cart"); }
 };
 var response = {
     statusinfo: "success",
@@ -30,7 +31,7 @@ var response = {
 var apiResponse = {
     success: true,
     message: "Product retrieved successfully",
-    payload: product
+    payload: producData
 };
 function displayInfo(info) {
     console.log(`API Name: ${info.name}`);
@@ -67,8 +68,8 @@ function displayApiResponse(apiResponse) {
 function mainInterface() {
     displayInfo(apiInfo);
     displayUser(user);
-    displayProduct(product);
-    displayOrder(order);
+    // displayProduct(producData);
+    // displayOrder(order);
     displayResponse(response);
     displayApiResponse(apiResponse);
 }
