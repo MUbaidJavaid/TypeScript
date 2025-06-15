@@ -1,15 +1,9 @@
 "use strict";
-class Authe {
-    login(name, password) {
-        if (name && password) {
-            return (`User ${name} logged in successfully.`);
-        }
-        else {
-            return "Login failed. Please provide valid credentials.";
-        }
-    }
-}
-class Student extends Authe {
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log("Inheritance Example");
+// This code demonstrates inheritance in TypeScript with a base class and two derived classes.
+const authe_1 = require("./modules/authe");
+class Student extends authe_1.Authe {
     name;
     age;
     constructor(name, age) {
@@ -21,7 +15,7 @@ class Student extends Authe {
         return `Student Name: ${this.name}, Age: ${this.age}`;
     }
 }
-class Teacher extends Authe {
+class Teacher extends authe_1.Authe {
     name;
     subject;
     constructor(name, subject) {

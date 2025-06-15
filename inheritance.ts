@@ -1,19 +1,9 @@
 console.log("Inheritance Example");
 // This code demonstrates inheritance in TypeScript with a base class and two derived classes.
+import { Authe } from "./modules/authe";
 
 
 
-class Authe {
- login(name: string, password: string) {
-   if(name && password) {
-     return (`User ${name} logged in successfully.`);
-   }else {
-        return "Login failed. Please provide valid credentials.";
-    }
-
- }
-
-}
 
 class Student extends Authe {
     constructor(private name: string, private age: number) {
