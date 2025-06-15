@@ -13,7 +13,7 @@ class StaticInClass {
 
 }
 
-var staticInClass = new StaticInClass("Static Example");
+var staticInClass = new StaticInClass("Static Example"); 
 // Example usage
 console.log(StaticInClass.staticProperty); // I am a static property
 console.log(StaticInClass.staticMethod()); // I am a static method
