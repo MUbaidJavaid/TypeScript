@@ -102,7 +102,7 @@ const info: Info = {
 //   price: 29.99
 // };
 
-type InfoUser = Info & User;
+type InfotypeUser = Info & User;
 // This type combines properties from both Info and User interfaces.
 // It will have properties: name, version, description, id, username, and email.
 type ProductOrder = Product & User;
@@ -115,14 +115,14 @@ type Ordertype = User & Product & {
 // This type combines properties from User and Product interfaces, along with additional properties orderId and productIds.
 // It will have properties: id, username, email, orderId, userId, and productIds.
 // Example usage
-const infoUsertype: InfoUser = {
-  name: "My API",
-  version: "1.0.0",
-  description: "This is a sample API for demonstration purposes.",
-  id: 1,
-  username: "john_doe",
-  email: "example@gmail.com"
-};
+// const infoUsertype: InfotypeUser = {
+//   name: "My API",
+//   version: "1.0.0",
+//   description: "This is a sample API for demonstration purposes.",
+//   id: 1,
+//   username: "john_doe",
+//   email: "example@gmail.com"
+// };
 // const productOrdertype: ProductOrder = {
 //   id: 101,
 //   name: "Sample Product",

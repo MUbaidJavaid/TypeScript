@@ -41,10 +41,9 @@ interface Product {
     productName: string;
 }
 declare const info: Info;
-type InfoUser = Info & User;
+type InfotypeUser = Info & User;
 type ProductOrder = Product & User;
 type Ordertype = User & Product & {
     orderId: number;
     productIds: number[];
 };
-declare const infoUsertype: InfoUser;

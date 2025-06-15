@@ -4,12 +4,7 @@ var apiInfo = {
     version: "1.0.0",
     description: "This is a sample API for demonstration purposes."
 };
-var user = {
-    id: 1,
-    username: "john_doe",
-    email: "example@gmail.com"
-};
-var user = {
+var userInterface = {
     id: 1,
     username: "john_doe",
     email: "exmale@gmail.com"
@@ -67,7 +62,7 @@ function displayApiResponse(apiResponse) {
 }
 function mainInterface() {
     displayInfo(apiInfo);
-    displayUser(user);
+    // displayUser(UserInterface);
     // displayProduct(producData);
     // displayOrder(order);
     displayResponse(response);

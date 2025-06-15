@@ -3,7 +3,7 @@ interface Info {
     version: string;
     description: string;
 }
-interface User {
+interface UserInterface {
     id: number;
     username: string;
     email: string;
@@ -13,7 +13,7 @@ interface ProductData {
     name: string;
     price: number;
 }
-interface Order extends User {
+interface Order extends UserInterface {
     orderId: number;
     userId: number;
     productIds: number[];
@@ -29,10 +29,9 @@ interface ApiResponse<T> {
     payload: T;
 }
 declare var apiInfo: Info;
-declare var user: User;
-declare var user: User;
+declare var userInterface: UserInterface;
 declare var producData: ProductData;
-declare var response: Responseof<User>;
+declare var response: Responseof<UserInterface>;
 declare var apiResponse: ApiResponse<ProductData>;
 declare function displayInfo(info: Info): void;
 declare function displayUser(user: User): void;

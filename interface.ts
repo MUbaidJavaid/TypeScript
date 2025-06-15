@@ -4,7 +4,7 @@ interface Info {
   description: string;
 }
 
-interface User {
+interface UserInterface {
   id: number;
   username: string;
   email: string;
@@ -17,7 +17,7 @@ interface ProductData {
 }
 
 
-interface Order extends User {
+interface Order extends UserInterface {
   // Extending User to include user information in the order
   orderId: number;
   userId: number;
@@ -42,12 +42,7 @@ var apiInfo: Info = {
   description: "This is a sample API for demonstration purposes."
 };
 
-var user: User = {
-  id: 1,
-  username: "john_doe",
-  email: "example@gmail.com"
-};
-var user: User = {
+var userInterface: UserInterface = {
   id: 1,
   username: "john_doe",
   email: "exmale@gmail.com"
@@ -64,7 +59,7 @@ var producData: ProductData = {
 };
 
 
-var response: Responseof<User> = {
+var response: Responseof<UserInterface> = {
   statusinfo: "success",
   data: user,
   error: undefined
@@ -113,7 +108,7 @@ function displayApiResponse<T>(apiResponse: ApiResponse<T>): void {
 
 function mainInterface(): void {
   displayInfo(apiInfo);
-  displayUser(user);
+  // displayUser(UserInterface);
   // displayProduct(producData);
   // displayOrder(order);
   displayResponse(response);
